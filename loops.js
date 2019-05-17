@@ -1,8 +1,10 @@
-let countdown = 100;
- 
-while (countdown > 0) {
-  console.log(--countdown);
+var i = 0;
+
+function incrementVariable() {
+  i = i + 1;
+  return i;
 }
-for (var i = 1; i < 100; i++) {
-  console.log("Hello World the " + 25 + " time");
-}
+
+do {
+  console.log("doo-bee-doo-bee-doo");
+} while (incrementVariable() < 5);
